@@ -15,6 +15,8 @@
 #define __percy__http__
 
 #include "stdafx.h"
+#include "curl.h"
+#include "easy.h"
 
 /*
 *  Class:		http
