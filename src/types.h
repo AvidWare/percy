@@ -10,10 +10,11 @@ typedef struct _JSON_{} JSON, *PJSON, *LPJSON;
 typedef struct _APICALL : JSON {
    string url;
    DWORD delay;
-   string param[MAX_PARAM];
+   string param;
    DWORD response_code;
    BOOL success;
    string error;
+   string method;
 } APICALL, *PAPICALL, *LPAPICALL;
 
 typedef struct _SETTINGS : JSON {

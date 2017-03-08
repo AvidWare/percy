@@ -27,7 +27,7 @@
 */
 namespace percy
 {
-   template<class T, class D>  class Parser {
+   template<class T>  class Parser {
 
       std::map<std::string, void*> vars;
 

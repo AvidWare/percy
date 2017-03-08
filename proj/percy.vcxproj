@@ -23,11 +23,13 @@
     <ClCompile Include="..\src\io.cpp" />
     <ClCompile Include="..\src\parser.cpp" />
     <ClCompile Include="..\src\percy.cpp" />
+    <ClCompile Include="..\src\runner.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\src\http.h" />
     <ClInclude Include="..\src\io.h" />
     <ClInclude Include="..\src\parser.h" />
+    <ClInclude Include="..\src\runner.h" />
     <ClInclude Include="..\src\stdafx.h" />
     <ClInclude Include="..\src\targetver.h" />
     <ClInclude Include="..\src\types.h" />

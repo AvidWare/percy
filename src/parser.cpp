@@ -11,11 +11,4 @@
 */
 #include "parser.h"
 
-percy::parser::parser()
-{
-}
-
-percy::parser::~parser()
-{
-}
 

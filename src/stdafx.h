@@ -13,6 +13,7 @@
 #include <sstream>
 #include <Windows.h>
 #include <map>
+#include "types.h"
 
 
 

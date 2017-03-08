@@ -17,6 +17,8 @@
 #include "stdafx.h"
 #include "curl.h"
 #include "easy.h"
+#include "stdafx.h"
+#include "types.h"
 
 /*
 *  Class:		http
@@ -29,31 +31,43 @@
 */
 namespace percy
 {
-   class http
-   {
-   public:
-      /*
+	class http
+	{
+	public:
+		/*
 		*  Function:	Default constructor
 		*
 		*  Summary:		Self explanatory
 		*
-		*	Arguments:	None
+		*	Arguments: None
 		*/
-      explicit http();
+		http(const std::string &base_url);
 
-      /*
+		/*
+		  *  Function:	Default destructor
+		  *
+		  *  Summary:		Self explanatory
+		  *
+		  *	Arguments:	None
+		  */
+		virtual ~http();
+
+		/*
 		*  Function:	Default destructor
 		*
 		*  Summary:		Self explanatory
 		*
 		*	Arguments:	None
 		*/
-      virtual ~http();
+		PERFORMANCE_DESCRIPTOR connect(const APICALL &call) const;
 
-   private:
-      std::string base_url;
-      
-   };
+
+
+
+	private:
+		std::string base_url;
+
+	};
 }
 
 #endif

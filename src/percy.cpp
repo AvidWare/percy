@@ -3,10 +3,14 @@
 
 #include "stdafx.h"
 #include "http.h"
+#include "runner.h"
 
 int main()
 {
-   percy::http();
+	percy::http server("http://localhost/api");
+	percy::runner runner(server, "", "");
+	runner.start();
+
     return 0;
 }
 
