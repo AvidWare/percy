@@ -1,0 +1,64 @@
+{
+  "baseUrl": "http://localhost/api",
+  "items": [
+    {
+      "name": "Login",
+      "description": "Logs the user into the account",
+      "method": "POST",
+      "order": 0,
+      "body": null,
+      "url": "users/login",
+      "params": "username=ibosman&password=password&deviceid=1GZ6FYAD5A6F42iXFFv3b8t71rJbpiwMWi",
+      "properties": [ { "apiToken": "apiToken" } ]
+    },
+    {
+      "name": "Get Silo tree",
+      "description": "Retrieves the silo tree for the user",
+      "method": "GET",
+      "order": 1,
+      "body": null,
+      "url": "silo/get/flat",
+      "params": null,
+      "headers": [ { "APIToken": "$apiToken" } ],
+      "properties": null
+    },
+    {
+      "name": "Get Silo folder",
+      "description": "Gets a silo folder",
+      "method": "GET",
+      "order": 1,
+      "body": null,
+      "url": "silo/folder/[$folderId]",
+      "params": null,
+      "headers": [ { "APIToken": "$apiToken" } ],
+      "properties": [ { "parentFolderId": "guid" } ]
+    },
+    {
+      "name": "Create Folder",
+      "description": "Creates a folder inside the silo",
+      "method": "POST",
+      "order": 2,
+      "body": null,
+      "url": "users/login",
+      "params": "parentid=[$parentFolderId]&foldername=performance",
+      "properties": [ { "folderId": "guid" } ]
+    },
+    {
+      "name": "Rename Folder",
+      "description": "Renames a folder",
+      "method": "POST",
+      "order": 0,
+      "body": null,
+      "url": "users/login",
+      "params": "rename?folderid=[$folderId]&parentId=[$parentFolderId]&folderName=yolose",
+      "properties": null
+    },
+    {
+      "name": "Move Folder",
+      "description": "Moves a folder to a new folder",
+      "url": "users/login",
+      "params": "folderId=[$folderId]&parentId=[$parentIdMove]",
+      "properties": [ "apiToken" ]
+    }
+  ]
+}

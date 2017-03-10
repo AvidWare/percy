@@ -5,6 +5,12 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "percy", "percy.vcxproj", "{7886CD6A-3954-4E6D-A22E-FBB339619B5F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "config", "config", "{22B1CE44-8BD1-49C2-80C7-BDAFA200DF32}"
+	ProjectSection(SolutionItems) = preProject
+		..\config\runner.json = ..\config\runner.json
+		..\config\settings.json = ..\config\settings.json
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64

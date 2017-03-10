@@ -61,12 +61,9 @@ namespace percy
 		*/
 		PERFORMANCE_DESCRIPTOR connect(const APICALL &call) const;
 
-
-
-
 	private:
 		std::string base_url;
-
+	   static DWORD WINAPIV ParseResponse(PCHAR ptr, UINT size, UINT nmemb, LPVOID userdata);
 	};
 }
 

@@ -7,7 +7,7 @@
 
 int main()
 {
-	percy::http server("http://localhost/api");
+	percy::http server("http://dev2-clientapi.senteondev.com/api");
 	percy::runner runner(server, "", "");
 	runner.start();
 
